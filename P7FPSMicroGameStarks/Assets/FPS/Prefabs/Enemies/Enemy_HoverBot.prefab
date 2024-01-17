@@ -115,8 +115,8 @@ MonoBehaviour:
   SwapToNextWeapon: 0
   DelayAfterWeaponSwap: 0
   EyeColorMaterial: {fileID: 2100000, guid: e6fdfd4e017234d43ac116abee8fa90a, type: 2}
-  DefaultEyeColor: {r: 23.849056, g: 7.292185, b: 0, a: 1}
-  AttackEyeColor: {r: 32, g: 1.4610044, b: 0, a: 1}
+  DefaultEyeColor: {r: 1, g: 0, b: 0, a: 1}
+  AttackEyeColor: {r: 42.722507, g: 25.417263, b: 0, a: 1}
   BodyMaterial: {fileID: 2100000, guid: c3dc5a90c49c99142999f85d6b419d80, type: 2}
   OnHitBodyGradient:
     serializedVersion: 2
@@ -472,8 +472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DetectionSourcePoint: {fileID: 6571005840976436832}
-  DetectionRange: 20
-  AttackRange: 10
+  DetectionRange: 25
+  AttackRange: 15
   KnownTargetTimeout: 12
   Animator: {fileID: 0}
 --- !u!1 &6421371450313891992
@@ -783,7 +783,7 @@ MonoBehaviour:
   WeaponRoot: {fileID: 8815063736924141185}
   WeaponMuzzle: {fileID: 2096565386399891227}
   ShootType: 1
-  ProjectilePrefab: {fileID: 8924682559891268397, guid: ec753d54f333bb944b8b04884ad63828,
+  ProjectilePrefab: {fileID: 8924682559891268397, guid: 4317ffade6713c244b7d659029229e20,
     type: 3}
   DelayBetweenShots: 0.8
   BulletSpreadAngle: 0

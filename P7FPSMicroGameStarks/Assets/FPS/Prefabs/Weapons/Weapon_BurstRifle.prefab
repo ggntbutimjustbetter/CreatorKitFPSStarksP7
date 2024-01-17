@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &472112039920115769
+--- !u!1 &5483668424682835716
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1410024937204598944}
-  - component: {fileID: 8318033323623726393}
-  - component: {fileID: 7483997442497683554}
+  - component: {fileID: 6111118503827725776}
+  m_Layer: 0
+  m_Name: Muzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6111118503827725776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483668424682835716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.007, y: -0.011, z: 0.248}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1561922628392960792}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7840837262490147789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6721588453989202559}
+  - component: {fileID: 933584617701260827}
+  - component: {fileID: 2204541148592364642}
   m_Layer: 0
   m_Name: Weapon_BurstRifle
   m_TagString: Untagged
@@ -18,29 +49,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1410024937204598944
+--- !u!4 &6721588453989202559
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472112039920115769}
+  m_GameObject: {fileID: 7840837262490147789}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -19.875204, y: -0.6130887, z: 6.1090016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8933100636949680816}
+  - {fileID: 1561922628392960792}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &8318033323623726393
+--- !u!82 &933584617701260827
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472112039920115769}
+  m_GameObject: {fileID: 7840837262490147789}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -130,13 +161,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7483997442497683554
+--- !u!114 &2204541148592364642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472112039920115769}
+  m_GameObject: {fileID: 7840837262490147789}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ad90ba0b1477764da373f5ec01a8cb5, type: 3}
@@ -145,23 +176,23 @@ MonoBehaviour:
   WeaponName: Burst Rifle
   WeaponIcon: {fileID: 21300000, guid: cab1398a10b307b44b0ffeb0eef23254, type: 3}
   CrosshairDataDefault:
-    CrosshairSprite: {fileID: 21300000, guid: 2b5b80f3ebc88174a8c662e280fdb09c, type: 3}
-    CrosshairSize: 50
-    CrosshairColor: {r: 1, g: 1, b: 1, a: 0}
-  CrosshairDataTargetInSight:
-    CrosshairSprite: {fileID: 21300000, guid: 2b5b80f3ebc88174a8c662e280fdb09c, type: 3}
-    CrosshairSize: 60
+    CrosshairSprite: {fileID: 0}
+    CrosshairSize: 0
     CrosshairColor: {r: 1, g: 0, b: 0, a: 0}
-  WeaponRoot: {fileID: 0}
-  WeaponMuzzle: {fileID: 0}
-  ShootType: 0
+  CrosshairDataTargetInSight:
+    CrosshairSprite: {fileID: 0}
+    CrosshairSize: 0
+    CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
+  WeaponRoot: {fileID: 1561922628393262904}
+  WeaponMuzzle: {fileID: 6111118503827725776}
+  ShootType: 1
   ProjectilePrefab: {fileID: 0}
-  DelayBetweenShots: 0.5
-  BulletSpreadAngle: 0
+  DelayBetweenShots: 0.05
+  BulletSpreadAngle: 0.5
   BulletsPerShot: 1
   RecoilForce: 1
-  AimZoomRatio: 1
-  AimOffset: {x: 0, y: 0, z: 0}
+  AimZoomRatio: 0.25
+  AimOffset: {x: 0, y: 0.13, z: 0}
   AutomaticReload: 1
   HasPhysicalBullets: 0
   ClipSize: 30
@@ -169,32 +200,33 @@ MonoBehaviour:
   EjectionPort: {fileID: 0}
   ShellCasingEjectionForce: 2
   ShellPoolSize: 1
-  AmmoReloadRate: 1
-  AmmoReloadDelay: 2
-  MaxAmmo: 8
+  AmmoReloadRate: 999999
+  AmmoReloadDelay: 0.7
+  MaxAmmo: 3
   AutomaticReleaseOnCharged: 0
   MaxChargeDuration: 2
   AmmoUsedOnStartCharge: 1
   AmmoUsageRateWhileCharging: 1
   WeaponAnimator: {fileID: 0}
-  MuzzleFlashPrefab: {fileID: 0}
+  MuzzleFlashPrefab: {fileID: 748781637555137343, guid: 9f671b22f25370048a18fb1f821294ec,
+    type: 3}
   UnparentMuzzleFlash: 0
-  ShootSfx: {fileID: 0}
-  ChangeWeaponSfx: {fileID: 0}
+  ShootSfx: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
+  ChangeWeaponSfx: {fileID: 8300000, guid: 6f3e0904bbbace745bdef08cdbcdfec0, type: 3}
   UseContinuousShootSound: 0
   ContinuousShootStartSfx: {fileID: 0}
   ContinuousShootLoopSfx: {fileID: 0}
   ContinuousShootEndSfx: {fileID: 0}
---- !u!1001 &8933100636949809200
+--- !u!1001 &1561922628393359768
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1410024937204598944}
+    m_TransformParent: {fileID: 6721588453989202559}
     m_Modifications:
     - target: {fileID: 100000, guid: b4d38a4c16d22ed45a2737e98d24e63a, type: 3}
       propertyPath: m_Name
-      value: Muzzle
+      value: Mesh_Weapon_1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b4d38a4c16d22ed45a2737e98d24e63a, type: 3}
       propertyPath: m_RootOrder
@@ -206,11 +238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b4d38a4c16d22ed45a2737e98d24e63a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.031
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b4d38a4c16d22ed45a2737e98d24e63a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.024
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b4d38a4c16d22ed45a2737e98d24e63a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -242,9 +274,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4d38a4c16d22ed45a2737e98d24e63a, type: 3}
---- !u!4 &8933100636949680816 stripped
+--- !u!4 &1561922628392960792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b4d38a4c16d22ed45a2737e98d24e63a,
     type: 3}
-  m_PrefabInstance: {fileID: 8933100636949809200}
+  m_PrefabInstance: {fileID: 1561922628393359768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1561922628393262904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: b4d38a4c16d22ed45a2737e98d24e63a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1561922628393359768}
   m_PrefabAsset: {fileID: 0}
